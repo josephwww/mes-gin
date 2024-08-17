@@ -1,0 +1,34 @@
+basePath: /
+definitions:
+  controllers.HealthResponse:
+    properties:
+      status:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server for a mes application.
+  termsOfService: http://swagger.io/terms/
+  title: Gin MES
+  version: 0.0.1
+paths:
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Check the service health
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controllers.HealthResponse'
+      summary: Check the service health
+      tags:
+      - service
+swagger: "2.0"

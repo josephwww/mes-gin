@@ -1,0 +1,16 @@
+{
+  "app_name": "MES-Gin",
+  "server_port": ":8080",
+  "mode": "prod",
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "mes-gin-user",
+    "password": "mysecretpassword",
+    "name": "mes_gin_db"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  }
+}
